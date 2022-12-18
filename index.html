@@ -6,13 +6,33 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="style.css" />
     <title>Draggable leafs</title>
+    <script src="https://raw.githack.com/SortableJS/Sortable/master/Sortable.js"></script>
   </head>
   <body>
-    <div class="container">
-      <div class="drag" draggable="true"><img src="green.png" /></div>
-      <div class="drag" draggable="true"><img src="orange.png" /></div>
-      <div class="drag" draggable="true"><img src="red.png" /></div>
+    <!--
+    <div class="container" id="sortablelist">
+      <div class="drag">
+        <img src="green.png" />
+      </div>
+      <div class="drag"><img src="orange.png" /></div>
+      <div class="drag"><img src="red.png" /></div>
     </div>
+    -->
+    <div class="container" id="sortablelist">
+      <img src="green.png" class="drag" />
+      <img src="orange.png" class="drag" />
+      <img src="red.png" class="drag" />
+      <img src="green.png" class="drag" />
+      <img src="orange.png" class="drag" />
+    </div>
+
+    <script>
+      new Sortable(sortablelist, {
+        animation: 300,
+        sort: true,
+        easing: "cubic-bezier(1, 0, 0, 1)",
+      });
+    </script>
   </body>
-  <script src="script.js"></script>
+  <!--..<script src="script.js"></script>--->
 </html>

@@ -1,3 +1,10 @@
+/*new Sortable(items, {
+  animation: 150,
+  ghostClass: "blue-background-class",
+});
+*/
+
+/*
 document.addEventListener("DOMContentLoaded", (event) => {
   function handleDragStart(e) {
     dragSrcEl = this;
@@ -28,3 +35,4 @@ document.addEventListener("DOMContentLoaded", (event) => {
     item.addEventListener("drop", handleDrop);
   });
 });
+*/

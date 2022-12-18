@@ -1,12 +1,14 @@
 img {
-  max-width: 50%;
+  max-width: 20%;
   height: auto;
 }
 .container {
-  display: flex;
   border: 1px solid;
   justify-content: space-evenly;
+  display: contents;
 }
 .drag {
-  border: solid;
+  /*border: solid 2px red;*/
+  margin-right: -8rem;
+  cursor: grab;
 }
