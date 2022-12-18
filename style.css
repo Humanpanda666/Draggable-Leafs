@@ -1,0 +1,12 @@
+img {
+  max-width: 50%;
+  height: auto;
+}
+.container {
+  display: flex;
+  border: 1px solid;
+  justify-content: space-evenly;
+}
+.drag {
+  border: solid;
+}
